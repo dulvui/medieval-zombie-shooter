@@ -23,4 +23,23 @@ position = Vector2( 359, 643 )
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="LifeBar" type="ProgressBar" parent="."]
+margin_left = 31.0
+margin_top = 18.0
+margin_right = 303.0
+margin_bottom = 53.0
+step = 1.0
+value = 100.0
+percent_visible = false
+
+[node name="WaveProgressBar" type="ProgressBar" parent="."]
+margin_left = 424.0
+margin_top = 18.0
+margin_right = 696.0
+margin_bottom = 53.0
+step = 1.0
+percent_visible = false
+
+[connection signal="zombie_died" from="Castle" to="." method="_on_Castle_zombie_died"]
+[connection signal="zombie_entered" from="Castle" to="." method="_on_Castle_zombie_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
