@@ -14,14 +14,14 @@ func shoot(target:Vector2) -> void:
 	animation_player.play("Shoot")
 
 
-func _on_VisibilityNotifier2D_screen_exited():
+func _on_VisibilityNotifier2D_screen_exited() -> void:
 	queue_free()
 
 
-func _on_AnimationPlayer_animation_finished(anim_name):
+func _on_AnimationPlayer_animation_finished(anim_name) -> void:
 	tween.interpolate_property(self, "global_position", global_position, target, SPEED, TRANS, EASE)
 	tween.start()
 
 
-func _on_HitDetector_body_entered(body):
+func _on_HitDetector_body_entered(body) -> void:
 	queue_free()

@@ -14,7 +14,7 @@ func _ready() -> void:
 	add_child(arrow)
 
 
-func _input(event):
+func _input(event) -> void:
 	if not shooting and event is InputEventScreenTouch and not event.pressed:
 		shooting = true
 		arrow.shoot(event.position)
@@ -22,7 +22,7 @@ func _input(event):
 	
 
 
-func _on_AnimationPlayer_animation_finished(anim_name):
+func _on_AnimationPlayer_animation_finished(anim_name) -> void:
 	if anim_name == "Shoot":
 		arrow = ARROW.instance()
 		arrow.visible = false
@@ -30,7 +30,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 		reload_timer.start()
 
 
-func _on_ReloadTimer_timeout():
+func _on_ReloadTimer_timeout() -> void:
 	arrow.visible = true
 	shooting = false
 	

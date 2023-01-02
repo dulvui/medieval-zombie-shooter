@@ -1,6 +1,6 @@
 extends Node2D
 
 
-func _input(event):
+func _input(event) -> void:
 	if event is InputEventScreenDrag or event is InputEventScreenTouch:
-		look_at(event.position)
+		$RotatingPart.look_at(event.position)
