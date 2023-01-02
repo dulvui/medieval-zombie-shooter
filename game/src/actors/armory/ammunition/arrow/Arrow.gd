@@ -4,9 +4,10 @@ const SPEED:float = 860.0
 
 var target
 
-func shoot(target:Vector2) -> void:
+func shoot(target:Vector2, power:float) -> void:
+	print(power)
 	var direction = -(global_position - target).normalized()
-	apply_central_impulse(Vector2(direction.x, direction.y) * SPEED)
+	apply_central_impulse(Vector2(direction.x, direction.y) * SPEED * power)
 
 
 func _on_VisibilityNotifier2D_screen_exited() -> void:
