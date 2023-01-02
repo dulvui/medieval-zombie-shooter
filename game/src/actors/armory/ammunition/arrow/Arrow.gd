@@ -24,4 +24,4 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 
 
 func _on_HitDetector_body_entered(body):
-	pass # Replace with function body.
+	queue_free()

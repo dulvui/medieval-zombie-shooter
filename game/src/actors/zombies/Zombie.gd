@@ -20,3 +20,7 @@ func die():
 	animated_sprite.play("die")
 	yield(animated_sprite, "animation_finished")
 	queue_free()
+
+
+func _on_HitDetector_area_entered(area):
+	die()
