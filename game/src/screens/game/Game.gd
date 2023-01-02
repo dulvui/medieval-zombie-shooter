@@ -15,6 +15,9 @@ func _ready() -> void:
 func _on_Timer_timeout() -> void:
 	_spawn_zombie()
 	life_bar.value -= damage
+	
+	if life_bar.value <= 0:
+		get_tree().change_scene("res://src/screens/menu/Menu.tscn")
 
 
 func _spawn_zombie() -> void:
