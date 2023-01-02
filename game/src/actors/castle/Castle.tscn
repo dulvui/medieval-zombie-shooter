@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 149.459
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 64.5, 66 )
 
 [node name="Castle" type="Node2D"]
 
@@ -16,3 +19,9 @@ margin_top = -66.0
 margin_right = 66.0
 margin_bottom = 64.0
 color = Color( 0.603922, 0.603922, 0.603922, 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1.5, -1 )
+shape = SubResource( 2 )

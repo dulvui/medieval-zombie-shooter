@@ -12,7 +12,7 @@ margin_left = -150.0
 margin_top = -122.0
 margin_right = 912.0
 margin_bottom = 1438.0
-color = Color( 0.490196, 0.945098, 0.858824, 1 )
+color = Color( 0, 0.360784, 0.290196, 1 )
 
 [node name="Castle" parent="." instance=ExtResource( 1 )]
 position = Vector2( 362, 644 )

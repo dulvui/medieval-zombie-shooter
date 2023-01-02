@@ -16,7 +16,6 @@ func _physics_process(delta) -> void:
 	
 func die() -> void:
 	is_alive = false
-	colission_shape.queue_free()
 	animated_sprite.play("die")
 	yield(animated_sprite, "animation_finished")
 	queue_free()

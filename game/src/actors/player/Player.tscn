@@ -15,4 +15,4 @@ scale = Vector2( 5, 5 )
 texture = ExtResource( 2 )
 
 [node name="Bow" parent="RotatingPart" instance=ExtResource( 3 )]
-position = Vector2( 15, 1 )
+position = Vector2( 20, 0 )
