@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/actors/castle/Castle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/actors/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/actors/armory/weapons/bow/Bow.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -150.0
+margin_top = -122.0
+margin_right = 912.0
+margin_bottom = 1438.0
+color = Color( 0.490196, 0.945098, 0.858824, 1 )
+
+[node name="Castle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 362, 644 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 359, 643 )
+
+[node name="Bow" parent="Player" instance=ExtResource( 3 )]
+position = Vector2( 29, 1 )

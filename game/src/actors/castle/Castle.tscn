@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 149.459
+
+[node name="Castle" type="Node2D"]
+
+[node name="ZombieDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZombieDetector"]
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -64.0
+margin_top = -66.0
+margin_right = 66.0
+margin_bottom = 64.0
+color = Color( 0.603922, 0.603922, 0.603922, 1 )
