@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-const SPEED:float = 360.0
+const SPEED:float = 860.0
 
 var target
 
