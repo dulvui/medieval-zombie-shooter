@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bow.png-9c20d8ed12fa4b2525dfacfb612c281e.stex"
+path="res://.import/zombie4.png-c2fafc842f8afcfa7b330f6f5ebeba11.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/assets/weapons/bow/bow.png"
-dest_files=[ "res://.import/bow.png-9c20d8ed12fa4b2525dfacfb612c281e.stex" ]
+source_file="res://assets/zombie/zombie4.png"
+dest_files=[ "res://.import/zombie4.png-c2fafc842f8afcfa7b330f6f5ebeba11.stex" ]
 
 [params]
 
@@ -24,7 +24,7 @@ flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false

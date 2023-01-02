@@ -1,6 +1,6 @@
 extends Node2D
 
-const SPEED = 0.5
+const SPEED:float = 0.5
 const TRANS = Tween.TRANS_LINEAR
 const EASE = Tween.EASE_OUT
 
