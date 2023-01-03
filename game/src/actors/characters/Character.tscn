@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/zombie/zombie2.png" type="Texture" id=5]
 [ext_resource path="res://assets/zombie/zombie5.png" type="Texture" id=6]
 [ext_resource path="res://assets/zombie/zombie6.png" type="Texture" id=7]
-[ext_resource path="res://src/actors/zombies/Zombie.gd" type="Script" id=8]
+[ext_resource path="res://src/actors/characters/Character.gd" type="Script" id=8]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 4.0
@@ -28,7 +28,7 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=3]
 radius = 4.0
 
-[node name="Zombie" type="KinematicBody2D"]
+[node name="Character" type="KinematicBody2D"]
 scale = Vector2( 6, 6 )
 collision_layer = 7
 collision_mask = 7

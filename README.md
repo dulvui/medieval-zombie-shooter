@@ -7,6 +7,7 @@ Godot Engine remake of my first libGDX game Color Shooter with zombies during me
   - [Setup](#setup)
   - [Contributions](#contributions)
   - [Licenses](#licenses)
+  - [Third party assets](#third-party-assets)
 
 ## Setup
 Get the latest version of the Godot Engine editor and check out the  
@@ -20,5 +21,9 @@ make your changes and make a pull request with a short description
 of the changes you made.
 
 ## Licenses
-The game itself is licensed under the [GNU AGPL v3.0](LICENSE) license and all  
+The game itself is licensed under the [GNU-GPL-v3.0](LICENSE) license and all  
 assets made by myself are licensed under the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+
+## Third party assets
+Rotunda font from [1001fonts.com/roman-uncial-modern-font.html](https://www.1001fonts.com/roman-uncial-modern-font.html) is licensed under the [OFL-v1.1](OFL.txt)  
+[game/theme/roman-uncial-modern/RomanUncialModern.ttf](game/theme/roman-uncial-modern/RomanUncialModern.ttf)

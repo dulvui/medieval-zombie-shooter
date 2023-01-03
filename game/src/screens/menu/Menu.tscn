@@ -12,14 +12,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -20.0
-margin_right = 20.0
-margin_bottom = 20.0
+margin_left = -54.5
+margin_top = -22.0
+margin_right = 54.5
+margin_bottom = 22.0
 
 [node name="Play" type="Button" parent="Buttons"]
-margin_right = 43.0
-margin_bottom = 20.0
+margin_right = 109.0
+margin_bottom = 44.0
 text = "PLAY"
 
 [connection signal="pressed" from="Buttons/Play" to="." method="_on_Play_pressed"]

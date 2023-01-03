@@ -37,6 +37,7 @@ window/stretch/aspect="keep"
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+theme/custom="res://theme/theme.tres"
 
 [input_devices]
 
@@ -44,8 +45,10 @@ pointing/emulate_touch_from_mouse=true
 
 [layer_names]
 
-2d_physics/layer_1="world"
+2d_physics/layer_1="castle"
 2d_physics/layer_2="weapon"
+2d_physics/layer_3="zombie"
+2d_physics/layer_4="human"
 
 [physics]
 
