@@ -3,8 +3,14 @@
 [ext_resource path="res://src/screens/menu/Menu.gd" type="Script" id=1]
 
 [node name="Menu" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -360.0
+margin_top = -640.0
+margin_right = 360.0
+margin_bottom = 640.0
 script = ExtResource( 1 )
 
 [node name="Buttons" type="VBoxContainer" parent="."]
@@ -12,14 +18,36 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -54.5
-margin_top = -22.0
-margin_right = 54.5
-margin_bottom = 22.0
+margin_left = -150.0
+margin_top = -135.5
+margin_right = 150.0
+margin_bottom = 135.5
+custom_constants/separation = 25
 
 [node name="Play" type="Button" parent="Buttons"]
-margin_right = 109.0
-margin_bottom = 44.0
-text = "PLAY"
+margin_right = 300.0
+margin_bottom = 49.0
+text = "ENDLESS"
+
+[node name="Story" type="Button" parent="Buttons"]
+margin_top = 74.0
+margin_right = 300.0
+margin_bottom = 123.0
+text = "STORY"
+
+[node name="Settings" type="Button" parent="Buttons"]
+margin_top = 148.0
+margin_right = 300.0
+margin_bottom = 197.0
+text = "SETTINGS"
+
+[node name="Exit" type="Button" parent="Buttons"]
+margin_top = 222.0
+margin_right = 300.0
+margin_bottom = 271.0
+text = "EXIT"
 
 [connection signal="pressed" from="Buttons/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Buttons/Story" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Buttons/Settings" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_Exit_pressed"]
