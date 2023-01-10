@@ -25,15 +25,14 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="ZombieDetector" type="Area2D" parent="."]
-collision_layer = 4
-collision_mask = 4
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZombieDetector"]
 shape = SubResource( 1 )
 
 [node name="HumanDetector" type="Area2D" parent="."]
-collision_layer = 8
-collision_mask = 8
+collision_layer = 2
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HumanDetector"]
 shape = SubResource( 3 )

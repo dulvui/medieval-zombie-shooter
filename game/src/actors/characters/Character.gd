@@ -25,12 +25,6 @@ func die() -> void:
 	yield(animated_sprite, "animation_finished")
 	queue_free()
 
-
-func _on_HitDetector_area_entered(area) -> void:
-	if is_alive:
-		die()
-
-
 func _on_HitDetector_body_entered(body) -> void:
 	if is_alive:
 		die()

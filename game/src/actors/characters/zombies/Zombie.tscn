@@ -1,9 +1,32 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/actors/characters/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/zombie/zombie1.png" type="Texture" id=2]
+[ext_resource path="res://assets/zombie/zombie5.png" type="Texture" id=3]
+[ext_resource path="res://assets/zombie/zombie4.png" type="Texture" id=4]
+[ext_resource path="res://assets/zombie/zombie7.png" type="Texture" id=5]
+[ext_resource path="res://assets/zombie/zombie3.png" type="Texture" id=6]
+[ext_resource path="res://assets/zombie/zombie6.png" type="Texture" id=7]
+[ext_resource path="res://assets/zombie/zombie2.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "die",
+"speed": 5.0
+} ]
 
 [node name="Zombie" instance=ExtResource( 1 )]
-collision_layer = 5
+collision_layer = 1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+frames = SubResource( 1 )
 
 [node name="HitDetector" parent="." index="2"]
-collision_mask = 2
+collision_layer = 4

@@ -45,9 +45,9 @@ pointing/emulate_touch_from_mouse=true
 
 [layer_names]
 
-2d_physics/layer_1="castle"
-2d_physics/layer_2="zombie"
-2d_physics/layer_3="human"
+2d_physics/layer_1="zombie"
+2d_physics/layer_2="human"
+2d_physics/layer_3="ammunition"
 
 [physics]
 
