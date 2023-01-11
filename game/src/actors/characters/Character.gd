@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 onready var animated_sprite:AnimatedSprite = $AnimatedSprite
 onready var colission_shape:CollisionShape2D = $CollisionShape2D 
+onready var hit_detector:Area2D = $HitDetector 
 
 const MIN_SPEED:float = 40.0
 const MAX_SPEED:float = 120.0
@@ -19,12 +20,17 @@ func _physics_process(delta) -> void:
 		look_at(CENTER)
 		move_and_slide(direction * speed)
 	
-func die() -> void:
+func _die() -> void:
 	is_alive = false
 	animated_sprite.play("die")
 	yield(animated_sprite, "animation_finished")
 	queue_free()
+	
+func _disable_colissions() -> void:
+	hit_detector.queue_free()
+	colission_shape.queue_free()
 
 func _on_HitDetector_body_entered(body) -> void:
 	if is_alive:
-		die()
+		_disable_colissions()
+		_die()
